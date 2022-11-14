@@ -17,7 +17,11 @@ public class Exercise1 {
         cValue=scanner.nextFloat();
         delta=(bValue*bValue)-4*aValue*cValue;
         //delta=(Math.pow(bValue,2))-4*aValue*cValue; העלאה בחזקה שלמדנו עם נועה
-        if (delta<0){
+        if(aValue==0){
+            result1= (cValue/bValue)*-1;
+            System.out.println("There is only one solution: " + result1);
+        }
+        else if (delta<0){
             System.out.println("There is no solution!");
         } else if (delta==0) {
             result1= (bValue*-1)/(2*aValue);
